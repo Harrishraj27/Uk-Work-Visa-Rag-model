@@ -1,0 +1,720 @@
+{
+  "keyword": {
+    "retriever": "keyword_bm25",
+    "hits": 11,
+    "total": 12,
+    "recall_at_k": 0.9167,
+    "k": 5,
+    "median_latency_ms": 0.96,
+    "p95_latency_ms": 1.06,
+    "missed_cases": [
+      "dev-08"
+    ],
+    "details": [
+      {
+        "id": "dev-01",
+        "split": "dev",
+        "question": "What is a certificate of sponsorship?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#11",
+          "skilled-worker-overview#2",
+          "skilled-worker-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-documents#1",
+          "sponsor-licence#2",
+          "skilled-worker-your-job#11",
+          "skilled-worker-costs#5",
+          "skilled-worker-extend#2"
+        ],
+        "latency_ms": 0.97
+      },
+      {
+        "id": "dev-02",
+        "split": "dev",
+        "question": "Does a sponsor licence mean every vacancy sponsors?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#9",
+          "sponsor-licence#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#9",
+          "sponsor-licence#3",
+          "sponsor-licence#2",
+          "sponsor-licence#1",
+          "skilled-worker-documents#1"
+        ],
+        "latency_ms": 0.81
+      },
+      {
+        "id": "dev-03",
+        "split": "dev",
+        "question": "Can I extend a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#4"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#4",
+          "graduate-overview#11",
+          "graduate-overview#1",
+          "graduate-documents#3",
+          "graduate-overview#5"
+        ],
+        "latency_ms": 0.93
+      },
+      {
+        "id": "dev-04",
+        "split": "dev",
+        "question": "How long can I stay on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#3"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#3",
+          "graduate-overview#5",
+          "graduate-overview#2",
+          "graduate-overview#4",
+          "graduate-overview#1"
+        ],
+        "latency_ms": 0.92
+      },
+      {
+        "id": "dev-05",
+        "split": "dev",
+        "question": "Can I switch from a Graduate visa to Skilled Worker?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#4",
+          "skilled-worker-switching#4",
+          "skilled-worker-switching#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#4",
+          "skilled-worker-switching#4",
+          "skilled-worker-english#6",
+          "skilled-worker-costs#2",
+          "skilled-worker-switching#5"
+        ],
+        "latency_ms": 0.99
+      },
+      {
+        "id": "dev-06",
+        "split": "dev",
+        "question": "When should I apply to switch to a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#8",
+          "skilled-worker-switching#1",
+          "skilled-worker-overview#8"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#4",
+          "skilled-worker-switching#8",
+          "skilled-worker-switching#5",
+          "skilled-worker-switching#1",
+          "skilled-worker-overview#3"
+        ],
+        "latency_ms": 1.01
+      },
+      {
+        "id": "dev-07",
+        "split": "dev",
+        "question": "What does the Graduate visa allow me to do for work?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#10",
+          "graduate-costs#3",
+          "graduate-overview#9",
+          "graduate-documents#1",
+          "graduate-overview#1"
+        ],
+        "latency_ms": 0.91
+      },
+      {
+        "id": "dev-08",
+        "split": "dev",
+        "question": "What does 'your job' need to meet for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#2",
+          "skilled-worker-your-job#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#12",
+          "skilled-worker-your-job#5",
+          "skilled-worker-your-job#11",
+          "skilled-worker-your-job#8",
+          "skilled-worker-switching#2"
+        ],
+        "latency_ms": 1.05
+      },
+      {
+        "id": "dev-09",
+        "split": "dev",
+        "question": "What are occupation codes in the Skilled Worker route?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#3",
+          "skilled-worker-your-job#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#3",
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-your-job#4",
+          "skilled-worker-your-job#2",
+          "skilled-worker-overview#9"
+        ],
+        "latency_ms": 1.0
+      },
+      {
+        "id": "dev-10",
+        "split": "dev",
+        "question": "What are approved employers for Skilled Worker?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#1",
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#9",
+          "sponsor-licence#2",
+          "skilled-worker-overview#1",
+          "skilled-worker-overview#9",
+          "skilled-worker-english#5"
+        ],
+        "latency_ms": 0.91
+      },
+      {
+        "id": "dev-11",
+        "split": "dev",
+        "question": "Where do salary exceptions for Skilled Worker apply?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-salary-exceptions#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#6",
+          "skilled-worker-salary-exceptions#2",
+          "skilled-worker-salary-exceptions#1",
+          "skilled-worker-salary-exceptions#4",
+          "skilled-worker-salary-exceptions#5"
+        ],
+        "latency_ms": 0.96
+      },
+      {
+        "id": "dev-12",
+        "split": "dev",
+        "question": "What documents do I need for a Skilled Worker application?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#7",
+          "skilled-worker-extend#12",
+          "skilled-worker-documents#2",
+          "skilled-worker-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#9",
+          "skilled-worker-switching#7",
+          "skilled-worker-extend#12",
+          "skilled-worker-extend#16",
+          "skilled-worker-switching#11"
+        ],
+        "latency_ms": 0.96
+      }
+    ]
+  },
+  "vector": {
+    "retriever": "vector_search",
+    "hits": 2,
+    "total": 12,
+    "recall_at_k": 0.1667,
+    "k": 5,
+    "median_latency_ms": 9.47,
+    "p95_latency_ms": 9.89,
+    "missed_cases": [
+      "dev-01",
+      "dev-03",
+      "dev-04",
+      "dev-05",
+      "dev-06",
+      "dev-07",
+      "dev-08",
+      "dev-09",
+      "dev-10",
+      "dev-12"
+    ],
+    "details": [
+      {
+        "id": "dev-01",
+        "split": "dev",
+        "question": "What is a certificate of sponsorship?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#11",
+          "skilled-worker-overview#2",
+          "skilled-worker-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#1",
+          "skilled-worker-salary-exceptions#4",
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-extend#15"
+        ],
+        "latency_ms": 9.88
+      },
+      {
+        "id": "dev-02",
+        "split": "dev",
+        "question": "Does a sponsor licence mean every vacancy sponsors?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#9",
+          "sponsor-licence#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#14",
+          "skilled-worker-switching#9",
+          "skilled-worker-costs#5",
+          "skilled-worker-english#4",
+          "skilled-worker-your-job#9"
+        ],
+        "latency_ms": 9.42
+      },
+      {
+        "id": "dev-03",
+        "split": "dev",
+        "question": "Can I extend a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "graduate-overview#7",
+          "graduate-overview#6",
+          "skilled-worker-english#4",
+          "graduate-overview#2"
+        ],
+        "latency_ms": 9.05
+      },
+      {
+        "id": "dev-04",
+        "split": "dev",
+        "question": "How long can I stay on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#5",
+          "graduate-overview#7",
+          "graduate-overview#6",
+          "skilled-worker-overview#11"
+        ],
+        "latency_ms": 9.83
+      },
+      {
+        "id": "dev-05",
+        "split": "dev",
+        "question": "Can I switch from a Graduate visa to Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#4",
+          "skilled-worker-switching#4",
+          "skilled-worker-switching#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#4",
+          "skilled-worker-english#1",
+          "skilled-worker-documents#4",
+          "skilled-worker-costs#5",
+          "skilled-worker-english#6"
+        ],
+        "latency_ms": 9.16
+      },
+      {
+        "id": "dev-06",
+        "split": "dev",
+        "question": "When should I apply to switch to a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#8",
+          "skilled-worker-switching#1",
+          "skilled-worker-overview#8"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#8",
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#1",
+          "skilled-worker-switching#6",
+          "skilled-worker-costs#4"
+        ],
+        "latency_ms": 9.66
+      },
+      {
+        "id": "dev-07",
+        "split": "dev",
+        "question": "What does the Graduate visa allow me to do for work?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#4",
+          "skilled-worker-documents#4",
+          "skilled-worker-extend#4",
+          "skilled-worker-english#6"
+        ],
+        "latency_ms": 9.21
+      },
+      {
+        "id": "dev-08",
+        "split": "dev",
+        "question": "What does 'your job' need to meet for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#2",
+          "skilled-worker-your-job#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#2",
+          "skilled-worker-extend#5",
+          "skilled-worker-extend#4",
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#8"
+        ],
+        "latency_ms": 9.52
+      },
+      {
+        "id": "dev-09",
+        "split": "dev",
+        "question": "What are occupation codes in the Skilled Worker route?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#3",
+          "skilled-worker-your-job#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#9",
+          "sponsor-licence#1",
+          "skilled-worker-salary-exceptions#5"
+        ],
+        "latency_ms": 9.86
+      },
+      {
+        "id": "dev-10",
+        "split": "dev",
+        "question": "What are approved employers for Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#1",
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#4",
+          "skilled-worker-extend#9",
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-switching#2",
+          "skilled-worker-switching#5"
+        ],
+        "latency_ms": 9.57
+      },
+      {
+        "id": "dev-11",
+        "split": "dev",
+        "question": "Where do salary exceptions for Skilled Worker apply?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-salary-exceptions#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#4",
+          "skilled-worker-switching#2",
+          "skilled-worker-switching#5",
+          "skilled-worker-your-job#8",
+          "skilled-worker-overview#8"
+        ],
+        "latency_ms": 9.25
+      },
+      {
+        "id": "dev-12",
+        "split": "dev",
+        "question": "What documents do I need for a Skilled Worker application?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#7",
+          "skilled-worker-extend#12",
+          "skilled-worker-documents#2",
+          "skilled-worker-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#4",
+          "skilled-worker-english#1",
+          "skilled-worker-documents#4",
+          "skilled-worker-extend#4",
+          "skilled-worker-costs#5"
+        ],
+        "latency_ms": 9.19
+      }
+    ]
+  },
+  "hybrid": {
+    "retriever": "hybrid_rrf",
+    "hits": 9,
+    "total": 12,
+    "recall_at_k": 0.75,
+    "k": 5,
+    "median_latency_ms": 10.44,
+    "p95_latency_ms": 10.74,
+    "missed_cases": [
+      "dev-05",
+      "dev-06",
+      "dev-08"
+    ],
+    "details": [
+      {
+        "id": "dev-01",
+        "split": "dev",
+        "question": "What is a certificate of sponsorship?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#11",
+          "skilled-worker-overview#2",
+          "skilled-worker-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-extend#5",
+          "skilled-worker-documents#4",
+          "skilled-worker-costs#2",
+          "skilled-worker-documents#1"
+        ],
+        "latency_ms": 10.43
+      },
+      {
+        "id": "dev-02",
+        "split": "dev",
+        "question": "Does a sponsor licence mean every vacancy sponsors?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#9",
+          "sponsor-licence#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#9",
+          "skilled-worker-costs#5",
+          "skilled-worker-extend#14",
+          "sponsor-licence#3",
+          "skilled-worker-switching#9"
+        ],
+        "latency_ms": 10.33
+      },
+      {
+        "id": "dev-03",
+        "split": "dev",
+        "question": "Can I extend a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#4"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#2",
+          "graduate-overview#6",
+          "graduate-overview#4",
+          "skilled-worker-costs#5"
+        ],
+        "latency_ms": 10.34
+      },
+      {
+        "id": "dev-04",
+        "split": "dev",
+        "question": "How long can I stay on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#3"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#2",
+          "graduate-overview#7",
+          "graduate-overview#6",
+          "graduate-overview#9",
+          "graduate-overview#3"
+        ],
+        "latency_ms": 10.43
+      },
+      {
+        "id": "dev-05",
+        "split": "dev",
+        "question": "Can I switch from a Graduate visa to Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#4",
+          "skilled-worker-switching#4",
+          "skilled-worker-switching#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#6",
+          "skilled-worker-english#1",
+          "skilled-worker-english#4",
+          "skilled-worker-documents#4",
+          "graduate-overview#3"
+        ],
+        "latency_ms": 10.7
+      },
+      {
+        "id": "dev-06",
+        "split": "dev",
+        "question": "When should I apply to switch to a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#8",
+          "skilled-worker-switching#1",
+          "skilled-worker-overview#8"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#1",
+          "skilled-worker-english#6",
+          "skilled-worker-your-job#8",
+          "skilled-worker-switching#4",
+          "skilled-worker-extend#8"
+        ],
+        "latency_ms": 10.73
+      },
+      {
+        "id": "dev-07",
+        "split": "dev",
+        "question": "What does the Graduate visa allow me to do for work?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#3",
+          "graduate-documents#2",
+          "graduate-overview#10",
+          "skilled-worker-english#1"
+        ],
+        "latency_ms": 10.73
+      },
+      {
+        "id": "dev-08",
+        "split": "dev",
+        "question": "What does 'your job' need to meet for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#2",
+          "skilled-worker-your-job#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#2",
+          "skilled-worker-overview#12",
+          "skilled-worker-your-job#8",
+          "skilled-worker-extend#5",
+          "skilled-worker-extend#7"
+        ],
+        "latency_ms": 10.46
+      },
+      {
+        "id": "dev-09",
+        "split": "dev",
+        "question": "What are occupation codes in the Skilled Worker route?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#3",
+          "skilled-worker-your-job#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-your-job#3",
+          "skilled-worker-extend#9",
+          "sponsor-licence#1",
+          "skilled-worker-your-job#4"
+        ],
+        "latency_ms": 10.34
+      },
+      {
+        "id": "dev-10",
+        "split": "dev",
+        "question": "What are approved employers for Skilled Worker?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#1",
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "sponsor-licence#1",
+          "skilled-worker-switching#7",
+          "skilled-worker-extend#12",
+          "skilled-worker-your-job#9",
+          "skilled-worker-extend#4"
+        ],
+        "latency_ms": 10.46
+      },
+      {
+        "id": "dev-11",
+        "split": "dev",
+        "question": "Where do salary exceptions for Skilled Worker apply?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-salary-exceptions#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-salary-exceptions#1",
+          "skilled-worker-your-job#8",
+          "skilled-worker-salary-exceptions#3",
+          "skilled-worker-costs#3"
+        ],
+        "latency_ms": 10.4
+      },
+      {
+        "id": "dev-12",
+        "split": "dev",
+        "question": "What documents do I need for a Skilled Worker application?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#7",
+          "skilled-worker-extend#12",
+          "skilled-worker-documents#2",
+          "skilled-worker-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-documents#4",
+          "skilled-worker-english#1",
+          "skilled-worker-documents#5",
+          "skilled-worker-documents#2",
+          "skilled-worker-overview#9"
+        ],
+        "latency_ms": 10.61
+      }
+    ]
+  },
+  "timestamp": "2026-10-14T21:44:43.112888+00:00",
+  "split": "dev",
+  "split_description": "Development tuning set (inspected for error analysis and parameter calibration)",
+  "configuration": {
+    "k": 5,
+    "corpus_chunks": 93,
+    "corpus_version": "2026-10-12-draft",
+    "embedding_provider": "fake",
+    "embedding_model": "fake-hash-embedder",
+    "embedding_dim": 64,
+    "rrf_k": 60
+  },
+  "metric_explanation": "Recall@5 measures whether AT LEAST ONE expected evidence chunk ID was present in the top 5 retrieved passages for each reviewed supported question. Retrieval success is NOT answer correctness: retrieving relevant context is necessary for evidence grounding, but generating an accurate, compliant answer still requires strict citation formatting, guardrail validation, and refusal of out-of-scope queries."
+}

@@ -1,0 +1,712 @@
+{
+  "keyword": {
+    "retriever": "keyword_bm25",
+    "hits": 11,
+    "total": 12,
+    "recall_at_k": 0.9167,
+    "k": 5,
+    "median_latency_ms": 0.96,
+    "p95_latency_ms": 1.13,
+    "missed_cases": [
+      "held-09"
+    ],
+    "details": [
+      {
+        "id": "held-01",
+        "split": "held_out",
+        "question": "How much is the Graduate visa application fee?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-costs#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#8",
+          "graduate-costs#1",
+          "graduate-overview#3",
+          "graduate-overview#5",
+          "graduate-overview#6"
+        ],
+        "latency_ms": 1.12
+      },
+      {
+        "id": "held-02",
+        "split": "held_out",
+        "question": "Can I study while on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#11"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#11",
+          "graduate-overview#1",
+          "graduate-documents#3",
+          "graduate-overview#5"
+        ],
+        "latency_ms": 0.91
+      },
+      {
+        "id": "held-03",
+        "split": "held_out",
+        "question": "Do I have to pay the healthcare surcharge on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-costs#3",
+          "graduate-costs#2",
+          "graduate-costs#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#9",
+          "graduate-costs#1",
+          "graduate-overview#8",
+          "graduate-costs#3",
+          "graduate-costs#2"
+        ],
+        "latency_ms": 0.98
+      },
+      {
+        "id": "held-04",
+        "split": "held_out",
+        "question": "What is the standard salary requirement for a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#5",
+          "skilled-worker-salary-exceptions#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-salary-exceptions#1",
+          "skilled-worker-salary-exceptions#2",
+          "skilled-worker-your-job#5",
+          "skilled-worker-salary-exceptions#4",
+          "skilled-worker-salary-exceptions#5"
+        ],
+        "latency_ms": 0.98
+      },
+      {
+        "id": "held-05",
+        "split": "held_out",
+        "question": "How much personal savings do I need to support myself for a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#4",
+          "skilled-worker-costs#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#10",
+          "skilled-worker-documents#2",
+          "skilled-worker-costs#4",
+          "skilled-worker-costs#1",
+          "skilled-worker-extend#11"
+        ],
+        "latency_ms": 1.05
+      },
+      {
+        "id": "held-06",
+        "split": "held_out",
+        "question": "How can I prove my knowledge of English for Skilled Worker?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#3",
+          "skilled-worker-english#1",
+          "skilled-worker-english#7",
+          "skilled-worker-english#5",
+          "skilled-worker-english#8"
+        ],
+        "latency_ms": 0.93
+      },
+      {
+        "id": "held-07",
+        "split": "held_out",
+        "question": "Who cannot apply to switch to a Skilled Worker visa from inside the UK?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#4",
+          "skilled-worker-documents#5",
+          "skilled-worker-overview#7",
+          "skilled-worker-costs#2",
+          "skilled-worker-switching#5"
+        ],
+        "latency_ms": 1.09
+      },
+      {
+        "id": "held-08",
+        "split": "held_out",
+        "question": "How long does a Skilled Worker visa last before needing extension?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-extend#1",
+          "skilled-worker-overview#5",
+          "skilled-worker-extend#2",
+          "skilled-worker-extend#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#5",
+          "skilled-worker-documents#4",
+          "skilled-worker-overview#8",
+          "skilled-worker-salary-exceptions#3",
+          "skilled-worker-extend#15"
+        ],
+        "latency_ms": 1.02
+      },
+      {
+        "id": "held-09",
+        "split": "held_out",
+        "question": "What is the lower salary threshold if I am under 26 or a recent graduate?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-salary-exceptions#1",
+          "skilled-worker-salary-exceptions#3"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#10",
+          "graduate-documents#1",
+          "graduate-overview#5",
+          "graduate-overview#11",
+          "graduate-costs#2"
+        ],
+        "latency_ms": 0.94
+      },
+      {
+        "id": "held-10",
+        "split": "held_out",
+        "question": "Can I travel outside the UK while my switching application is pending?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#1",
+          "skilled-worker-extend#1",
+          "skilled-worker-documents#5",
+          "graduate-overview#7",
+          "skilled-worker-overview#7"
+        ],
+        "latency_ms": 0.87
+      },
+      {
+        "id": "held-11",
+        "split": "held_out",
+        "question": "Can I work as a professional sportsperson on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#10",
+          "graduate-costs#3",
+          "graduate-overview#9",
+          "graduate-overview#6",
+          "graduate-overview#2"
+        ],
+        "latency_ms": 0.92
+      },
+      {
+        "id": "held-12",
+        "split": "held_out",
+        "question": "How much does an employer pay for a sponsor licence?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "sponsor-licence#2",
+          "skilled-worker-your-job#9",
+          "graduate-overview#8",
+          "sponsor-licence#3",
+          "skilled-worker-overview#10"
+        ],
+        "latency_ms": 0.84
+      }
+    ]
+  },
+  "vector": {
+    "retriever": "vector_search",
+    "hits": 1,
+    "total": 12,
+    "recall_at_k": 0.0833,
+    "k": 5,
+    "median_latency_ms": 9.42,
+    "p95_latency_ms": 10.33,
+    "missed_cases": [
+      "held-01",
+      "held-02",
+      "held-03",
+      "held-04",
+      "held-06",
+      "held-07",
+      "held-08",
+      "held-09",
+      "held-10",
+      "held-11",
+      "held-12"
+    ],
+    "details": [
+      {
+        "id": "held-01",
+        "split": "held_out",
+        "question": "How much is the Graduate visa application fee?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-costs#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#1",
+          "skilled-worker-extend#15",
+          "skilled-worker-switching#10",
+          "skilled-worker-salary-exceptions#4"
+        ],
+        "latency_ms": 9.42
+      },
+      {
+        "id": "held-02",
+        "split": "held_out",
+        "question": "Can I study while on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#11"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#5",
+          "graduate-overview#7",
+          "graduate-overview#6",
+          "skilled-worker-overview#11"
+        ],
+        "latency_ms": 10.22
+      },
+      {
+        "id": "held-03",
+        "split": "held_out",
+        "question": "Do I have to pay the healthcare surcharge on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-costs#3",
+          "graduate-costs#2",
+          "graduate-costs#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#5",
+          "graduate-overview#7",
+          "graduate-overview#6",
+          "skilled-worker-extend#8"
+        ],
+        "latency_ms": 9.3
+      },
+      {
+        "id": "held-04",
+        "split": "held_out",
+        "question": "What is the standard salary requirement for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#5",
+          "skilled-worker-salary-exceptions#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-your-job#8",
+          "skilled-worker-extend#5",
+          "skilled-worker-your-job#1",
+          "skilled-worker-salary-exceptions#4"
+        ],
+        "latency_ms": 9.4
+      },
+      {
+        "id": "held-05",
+        "split": "held_out",
+        "question": "How much personal savings do I need to support myself for a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#4",
+          "skilled-worker-costs#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#4",
+          "skilled-worker-costs#5",
+          "graduate-overview#2",
+          "graduate-overview#7",
+          "skilled-worker-your-job#2"
+        ],
+        "latency_ms": 9.6
+      },
+      {
+        "id": "held-06",
+        "split": "held_out",
+        "question": "How can I prove my knowledge of English for Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#14",
+          "skilled-worker-switching#9",
+          "graduate-overview#2",
+          "skilled-worker-extend#5",
+          "skilled-worker-extend#4"
+        ],
+        "latency_ms": 9.9
+      },
+      {
+        "id": "held-07",
+        "split": "held_out",
+        "question": "Who cannot apply to switch to a Skilled Worker visa from inside the UK?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#4",
+          "skilled-worker-english#1",
+          "skilled-worker-english#6",
+          "skilled-worker-extend#8",
+          "skilled-worker-documents#4"
+        ],
+        "latency_ms": 9.92
+      },
+      {
+        "id": "held-08",
+        "split": "held_out",
+        "question": "How long does a Skilled Worker visa last before needing extension?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-extend#1",
+          "skilled-worker-overview#5",
+          "skilled-worker-extend#2",
+          "skilled-worker-extend#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-extend#3",
+          "graduate-overview#5",
+          "skilled-worker-switching#2",
+          "skilled-worker-overview#3"
+        ],
+        "latency_ms": 9.2
+      },
+      {
+        "id": "held-09",
+        "split": "held_out",
+        "question": "What is the lower salary threshold if I am under 26 or a recent graduate?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-salary-exceptions#1",
+          "skilled-worker-salary-exceptions#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#1",
+          "skilled-worker-overview#4",
+          "sponsor-licence#3",
+          "skilled-worker-salary-exceptions#4"
+        ],
+        "latency_ms": 9.73
+      },
+      {
+        "id": "held-10",
+        "split": "held_out",
+        "question": "Can I travel outside the UK while my switching application is pending?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#1",
+          "skilled-worker-your-job#8",
+          "skilled-worker-extend#5",
+          "graduate-overview#2",
+          "sponsor-licence#3"
+        ],
+        "latency_ms": 9.43
+      },
+      {
+        "id": "held-11",
+        "split": "held_out",
+        "question": "Can I work as a professional sportsperson on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "graduate-overview#7",
+          "skilled-worker-your-job#5",
+          "skilled-worker-english#4",
+          "graduate-overview#6"
+        ],
+        "latency_ms": 9.23
+      },
+      {
+        "id": "held-12",
+        "split": "held_out",
+        "question": "How much does an employer pay for a sponsor licence?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#4",
+          "skilled-worker-costs#5",
+          "skilled-worker-english#4",
+          "skilled-worker-switching#2",
+          "skilled-worker-switching#5"
+        ],
+        "latency_ms": 9.3
+      }
+    ]
+  },
+  "hybrid": {
+    "retriever": "hybrid_rrf",
+    "hits": 5,
+    "total": 12,
+    "recall_at_k": 0.4167,
+    "k": 5,
+    "median_latency_ms": 10.56,
+    "p95_latency_ms": 11.26,
+    "missed_cases": [
+      "held-02",
+      "held-03",
+      "held-04",
+      "held-06",
+      "held-07",
+      "held-08",
+      "held-12"
+    ],
+    "details": [
+      {
+        "id": "held-01",
+        "split": "held_out",
+        "question": "How much is the Graduate visa application fee?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-costs#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-costs#1",
+          "graduate-documents#2",
+          "graduate-overview#8",
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#1"
+        ],
+        "latency_ms": 10.37
+      },
+      {
+        "id": "held-02",
+        "split": "held_out",
+        "question": "Can I study while on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#11"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#2",
+          "graduate-overview#6",
+          "graduate-overview#9",
+          "skilled-worker-costs#5"
+        ],
+        "latency_ms": 10.51
+      },
+      {
+        "id": "held-03",
+        "split": "held_out",
+        "question": "Do I have to pay the healthcare surcharge on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-costs#3",
+          "graduate-costs#2",
+          "graduate-costs#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#9",
+          "graduate-overview#6",
+          "graduate-overview#2",
+          "graduate-overview#7",
+          "skilled-worker-costs#5"
+        ],
+        "latency_ms": 10.13
+      },
+      {
+        "id": "held-04",
+        "split": "held_out",
+        "question": "What is the standard salary requirement for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#5",
+          "skilled-worker-salary-exceptions#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-salary-exceptions#4",
+          "skilled-worker-your-job#8",
+          "skilled-worker-salary-exceptions#2",
+          "skilled-worker-salary-exceptions#3"
+        ],
+        "latency_ms": 10.35
+      },
+      {
+        "id": "held-05",
+        "split": "held_out",
+        "question": "How much personal savings do I need to support myself for a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#4",
+          "skilled-worker-costs#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-overview#2",
+          "skilled-worker-overview#8",
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-salary-exceptions#3"
+        ],
+        "latency_ms": 10.64
+      },
+      {
+        "id": "held-06",
+        "split": "held_out",
+        "question": "How can I prove my knowledge of English for Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#14",
+          "skilled-worker-english#2",
+          "skilled-worker-switching#9",
+          "skilled-worker-overview#8",
+          "skilled-worker-switching#2"
+        ],
+        "latency_ms": 10.27
+      },
+      {
+        "id": "held-07",
+        "split": "held_out",
+        "question": "Who cannot apply to switch to a Skilled Worker visa from inside the UK?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#4"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-documents#5",
+          "sponsor-licence#1",
+          "skilled-worker-english#6",
+          "skilled-worker-english#4",
+          "skilled-worker-english#1"
+        ],
+        "latency_ms": 10.41
+      },
+      {
+        "id": "held-08",
+        "split": "held_out",
+        "question": "How long does a Skilled Worker visa last before needing extension?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-extend#1",
+          "skilled-worker-overview#5",
+          "skilled-worker-extend#2",
+          "skilled-worker-extend#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#8",
+          "skilled-worker-extend#3",
+          "skilled-worker-overview#2",
+          "skilled-worker-switching#3",
+          "skilled-worker-extend#13"
+        ],
+        "latency_ms": 10.79
+      },
+      {
+        "id": "held-09",
+        "split": "held_out",
+        "question": "What is the lower salary threshold if I am under 26 or a recent graduate?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-salary-exceptions#1",
+          "skilled-worker-salary-exceptions#3"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#2",
+          "skilled-worker-salary-exceptions#3",
+          "graduate-overview#7",
+          "graduate-costs#1",
+          "graduate-overview#6"
+        ],
+        "latency_ms": 10.96
+      },
+      {
+        "id": "held-10",
+        "split": "held_out",
+        "question": "Can I travel outside the UK while my switching application is pending?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-switching#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-switching#1",
+          "skilled-worker-english#1",
+          "skilled-worker-costs#2",
+          "skilled-worker-your-job#1",
+          "skilled-worker-extend#1"
+        ],
+        "latency_ms": 11.18
+      },
+      {
+        "id": "held-11",
+        "split": "held_out",
+        "question": "Can I work as a professional sportsperson on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#6",
+          "graduate-overview#9",
+          "graduate-overview#2",
+          "graduate-overview#7",
+          "graduate-overview#10"
+        ],
+        "latency_ms": 10.87
+      },
+      {
+        "id": "held-12",
+        "split": "held_out",
+        "question": "How much does an employer pay for a sponsor licence?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "sponsor-licence#1",
+          "skilled-worker-salary-exceptions#4",
+          "sponsor-licence#2",
+          "skilled-worker-extend#4"
+        ],
+        "latency_ms": 10.62
+      }
+    ]
+  },
+  "timestamp": "2026-10-14T21:44:43.662160+00:00",
+  "split": "held_out",
+  "split_description": "Original holdout set (previously inspected; not an untouched blind set)",
+  "configuration": {
+    "k": 5,
+    "corpus_chunks": 93,
+    "corpus_version": "2026-10-12-draft",
+    "embedding_provider": "fake",
+    "embedding_model": "fake-hash-embedder",
+    "embedding_dim": 64,
+    "rrf_k": 60
+  },
+  "metric_explanation": "Recall@5 measures whether AT LEAST ONE expected evidence chunk ID was present in the top 5 retrieved passages for each reviewed supported question. Retrieval success is NOT answer correctness: retrieving relevant context is necessary for evidence grounding, but generating an accurate, compliant answer still requires strict citation formatting, guardrail validation, and refusal of out-of-scope queries."
+}

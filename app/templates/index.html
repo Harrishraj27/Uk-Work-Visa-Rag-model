@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A portfolio prototype that answers general questions about UK Graduate visas and switching to Skilled Worker, with visible citations and source dates.">
+<title>UK Work Visa Evidence Assistant</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>UK Work Visa Evidence Assistant</h1>
+  <p class="boundary">A portfolio prototype, not legal advice and not a UK government service. It reads a reviewed snapshot of GOV.UK pages (corpus {{ corpus_version }}, {{ n_chunks }} passages). It cannot decide whether you qualify.</p>
+</header>
+<main>
+  <form method="post" action="/ask">
+    <label for="q">Ask a general question about Graduate visas or switching to Skilled Worker</label>
+    <input id="q" name="question" maxlength="500" required value="{{ question or '' }}" placeholder="e.g. Can I switch from a Graduate visa to Skilled Worker?">
+    <button type="submit">Find evidence</button>
+  </form>
+
+  {% if llm_mode == "offline" %}
+    <div class="mode-banner offline" role="status"><strong>OFFLINE DEMO MODE.</strong> No language model is connected, so this page cannot write answers. It shows the closest official passages, quoted word for word. Read the whole passage, including headings such as "You cannot".</div>
+  {% elif llm_mode == "none" %}
+    <div class="mode-banner offline" role="status"><strong>PASSAGES ONLY.</strong> No language model is configured. Showing the closest official passages, word for word.</div>
+  {% endif %}
+  {% for w in config_warnings %}<div class="mode-banner" role="status">&#9888; {{ w }}</div>{% endfor %}
+  {% if startup_errors %}
+    <div class="error-banner" role="alert">Setup problem: {% for k, v in startup_errors.items() %}{{ k }}: {{ v }}{% if not loop.last %}; {% endif %}{% endfor %}</div>
+  {% endif %}
+  {% if error is defined and error %}
+    <div class="error-banner" role="alert">&#9888; {{ error }}</div>
+  {% endif %}
+
+  {% if question is defined %}
+
+    {% if answer %}
+      <section class="answer-section">
+        <h2>{% if kind == "refusal" or kind == "abstain" %}Not answered{% elif kind == "offline" %}Offline demo output{% else %}Answer (AI-written, check the passages){% endif %}</h2>
+        <div class="answer-box" data-kind="{{ kind }}">{{ answer }}</div>
+        {% if usage is defined and usage and kind == "answer" %}
+          <p class="meta">Tokens: {{ usage.input_tokens }} in / {{ usage.output_tokens }} out{% if cost %} &middot; Est. cost: {{ cost }}{% endif %}</p>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {# --- Evidence passages --- #}
+    {% if results %}
+      <h2>Official passages ({{ results|length }} retrieved)</h2>
+      {% for r in results %}
+      <article class="evidence{% if r.is_stale is defined and r.is_stale %} stale{% endif %}">
+        <h3><a href="{{ r.url }}" rel="noopener" target="_blank">{{ r.title }}</a>: {{ r.section_heading }}</h3>
+        {% if r.is_stale is defined and r.is_stale %}
+          <p class="stale-warn">⚠ This passage may be outdated (fetched {{ r.fetched_at }}). Check the official page.</p>
+        {% endif %}
+        <blockquote>{{ r.text }}</blockquote>
+        <p class="meta">Citation <code>{{ r.id }}</code>. Page updated {{ r.page_updated_on or "date not shown on page" }}. Fetched {{ r.fetched_at }}.{% if r.score is defined %} Score {{ r.score }}.{% endif %}</p>
+      </article>
+      {% endfor %}
+    {% elif kind != "refusal" %}
+      <p class="limit">No relevant passage found in the stored sources. This assistant will not guess; check the official GOV.UK guidance or ask a regulated adviser.</p>
+    {% endif %}
+
+  {% elif n_chunks == 0 %}
+    <p class="limit">No corpus loaded yet. Run the ingestion steps in the README.</p>
+  {% endif %}
+</main>
+<footer><p>Sources are a saved snapshot, not live GOV.UK. Check the fetched dates and the official page before relying on anything. General information only, not legal or immigration advice.</p><p>{{ ogl }}</p></footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "sources": {
+    "graduate-costs": {
+      "url": "https://www.gov.uk/graduate-visa/how-much-it-costs",
+      "title": "Graduate visa",
+      "page_updated_on": "2026-09-09",
+      "fetched_at": "2026-10-12T18:18:58+00:00",
+      "content_hash": "68716d308fa5ffd040df5023054616da5fc646a51e0d1ff25380c7f5f35c40db",
+      "chunk_count": 3
+    },
+    "graduate-documents": {
+      "url": "https://www.gov.uk/graduate-visa/documents-youll-need-to-apply",
+      "title": "Graduate visa",
+      "page_updated_on": "2026-09-09",
+      "fetched_at": "2026-10-12T18:18:58+00:00",
+      "content_hash": "626cbca77790871352ee9f806f83d868fff93324b66ebd0afd79902a7d7fd6f8",
+      "chunk_count": 3
+    },
+    "graduate-overview": {
+      "url": "https://www.gov.uk/graduate-visa",
+      "title": "Graduate visa",
+      "page_updated_on": "2026-09-09",
+      "fetched_at": "2026-10-12T18:18:57+00:00",
+      "content_hash": "432271078a06f231abb9345343f17b0ba9479e4bb958fbe320bb6da0b5fa2d2e",
+      "chunk_count": 11
+    },
+    "skilled-worker-costs": {
+      "url": "https://www.gov.uk/skilled-worker-visa/how-much-it-costs",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:18:59+00:00",
+      "content_hash": "1859609bfb32193a6cd8f0d5b18a84be0632d1efda0db1905c8440b913d3dccf",
+      "chunk_count": 5
+    },
+    "skilled-worker-documents": {
+      "url": "https://www.gov.uk/skilled-worker-visa/documents-you-must-provide",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:19:00+00:00",
+      "content_hash": "e69d5817598df0fc96d2668ea261bb16a2861e28a39bbebe2dddc2299d81ee3a",
+      "chunk_count": 5
+    },
+    "skilled-worker-english": {
+      "url": "https://www.gov.uk/skilled-worker-visa/knowledge-of-english",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:19:00+00:00",
+      "content_hash": "b2ce04f25967e775c5d61fc85138d76966e67b947b1919ccddc44cdf8a3a0ff4",
+      "chunk_count": 8
+    },
+    "skilled-worker-extend": {
+      "url": "https://www.gov.uk/skilled-worker-visa/extend-your-visa",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:19:00+00:00",
+      "content_hash": "6b66f9b72e2df1b395dbf733a70bf887eca3a560c41e527354233ebd47169df0",
+      "chunk_count": 16
+    },
+    "skilled-worker-overview": {
+      "url": "https://www.gov.uk/skilled-worker-visa",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:18:58+00:00",
+      "content_hash": "4d4c438f977005dc2628adb169633997729a2c302390078d95fdbcfed63e9caf",
+      "chunk_count": 12
+    },
+    "skilled-worker-salary-exceptions": {
+      "url": "https://www.gov.uk/skilled-worker-visa/when-you-can-be-paid-less",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:18:59+00:00",
+      "content_hash": "056114c2a9eedfc0c14a5db0fd77a6b76d1715fc3badefd41d5bfe53f916318f",
+      "chunk_count": 5
+    },
+    "skilled-worker-switching": {
+      "url": "https://www.gov.uk/skilled-worker-visa/switch-to-this-visa",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:18:59+00:00",
+      "content_hash": "041959545fada17c83a682a8dd175086fc55e6e1983e798ea1cc173330d93b5b",
+      "chunk_count": 11
+    },
+    "skilled-worker-your-job": {
+      "url": "https://www.gov.uk/skilled-worker-visa/your-job",
+      "title": "Skilled Worker visa",
+      "page_updated_on": "2026-09-14",
+      "fetched_at": "2026-10-12T18:18:59+00:00",
+      "content_hash": "5cbdee586604c4248a70a243001f6c9a8fdafc2c10c84f226875af5c488533d8",
+      "chunk_count": 11
+    },
+    "sponsor-licence": {
+      "url": "https://www.gov.uk/uk-visa-sponsorship-employers",
+      "title": "UK visa sponsorship for employers",
+      "page_updated_on": "2026-10-12",
+      "fetched_at": "2026-10-12T18:19:00+00:00",
+      "content_hash": "cebbf7c88ad430f0cb05b635be25734615d2e752a73e14e3fb7d3555130d7ad6",
+      "chunk_count": 3
+    }
+  },
+  "chunk_count": 93
+}

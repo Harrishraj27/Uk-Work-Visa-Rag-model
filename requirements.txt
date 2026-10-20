@@ -1,0 +1,11 @@
+# Runtime + test dependencies, pinned to the versions the test suite was run with (Python 3.10-3.12).
+fastapi==0.143.1
+starlette==1.7.0
+uvicorn[standard]==0.54.0
+jinja2==3.1.6
+python-multipart==0.0.32
+httpx==0.28.1
+beautifulsoup4==4.15.0
+pydantic==2.14.1
+numpy==2.2.6
+pytest==8.4.2

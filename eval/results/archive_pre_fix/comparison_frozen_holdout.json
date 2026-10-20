@@ -1,0 +1,695 @@
+{
+  "keyword": {
+    "retriever": "keyword_bm25",
+    "hits": 9,
+    "total": 12,
+    "recall_at_k": 0.75,
+    "k": 5,
+    "median_latency_ms": 1.24,
+    "p95_latency_ms": 1.76,
+    "missed_cases": [
+      "frozen-01",
+      "frozen-06",
+      "frozen-11"
+    ],
+    "details": [
+      {
+        "id": "frozen-01",
+        "split": "frozen_holdout",
+        "question": "Can I take on a second job on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#12",
+          "skilled-worker-extend#15",
+          "skilled-worker-switching#10",
+          "skilled-worker-your-job#2",
+          "skilled-worker-your-job#3"
+        ],
+        "latency_ms": 1.63
+      },
+      {
+        "id": "frozen-02",
+        "split": "frozen_holdout",
+        "question": "Do I need a criminal record certificate for a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-documents#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-documents#3",
+          "skilled-worker-documents#2",
+          "skilled-worker-your-job#11",
+          "skilled-worker-extend#15",
+          "skilled-worker-switching#10"
+        ],
+        "latency_ms": 1.6
+      },
+      {
+        "id": "frozen-03",
+        "split": "frozen_holdout",
+        "question": "What happens if I want to change my employer on a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-extend#3",
+          "skilled-worker-overview#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#7",
+          "skilled-worker-overview#12",
+          "sponsor-licence#2",
+          "skilled-worker-overview#5",
+          "skilled-worker-extend#16"
+        ],
+        "latency_ms": 1.73
+      },
+      {
+        "id": "frozen-04",
+        "split": "frozen_holdout",
+        "question": "What reference number from my university do I need for a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-documents#1",
+          "graduate-overview#6",
+          "graduate-overview#2",
+          "graduate-overview#10",
+          "graduate-documents#2"
+        ],
+        "latency_ms": 1.26
+      },
+      {
+        "id": "frozen-05",
+        "split": "frozen_holdout",
+        "question": "Can I stay in the UK while waiting for my Graduate visa decision?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#7"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#4",
+          "graduate-overview#1",
+          "graduate-overview#5",
+          "graduate-overview#2"
+        ],
+        "latency_ms": 1.21
+      },
+      {
+        "id": "frozen-06",
+        "split": "frozen_holdout",
+        "question": "Which countries are exempt from the English language requirement for Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-english#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#8",
+          "skilled-worker-english#7",
+          "skilled-worker-english#5",
+          "skilled-worker-english#4"
+        ],
+        "latency_ms": 1.21
+      },
+      {
+        "id": "frozen-07",
+        "split": "frozen_holdout",
+        "question": "How much is the Skilled Worker application fee from inside the UK for up to 3 years?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#2",
+          "skilled-worker-costs#3",
+          "skilled-worker-costs#1",
+          "skilled-worker-overview#10",
+          "skilled-worker-documents#5"
+        ],
+        "latency_ms": 1.32
+      },
+      {
+        "id": "frozen-08",
+        "split": "frozen_holdout",
+        "question": "Can I apply for indefinite leave to remain after 5 years on a Skilled Worker visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#6",
+          "skilled-worker-overview#12",
+          "sponsor-licence#1",
+          "skilled-worker-costs#2",
+          "skilled-worker-overview#5"
+        ],
+        "latency_ms": 1.28
+      },
+      {
+        "id": "frozen-09",
+        "split": "frozen_holdout",
+        "question": "Can I get a refund on the healthcare surcharge if I work in public healthcare?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#1",
+          "graduate-costs#3"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-costs#3",
+          "graduate-overview#9",
+          "skilled-worker-overview#11",
+          "skilled-worker-your-job#6",
+          "graduate-costs#2"
+        ],
+        "latency_ms": 1.12
+      },
+      {
+        "id": "frozen-10",
+        "split": "frozen_holdout",
+        "question": "Can my employer sponsor my visa if their licence application is still pending?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "sponsor-licence#1",
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-documents#1",
+          "sponsor-licence#3",
+          "skilled-worker-your-job#9",
+          "sponsor-licence#2",
+          "sponsor-licence#1"
+        ],
+        "latency_ms": 1.2
+      },
+      {
+        "id": "frozen-11",
+        "split": "frozen_holdout",
+        "question": "Can I switch to a Graduate visa from a visitor visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#2"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#4",
+          "graduate-overview#3",
+          "graduate-documents#2",
+          "graduate-documents#1",
+          "graduate-overview#1"
+        ],
+        "latency_ms": 1.19
+      },
+      {
+        "id": "frozen-12",
+        "split": "frozen_holdout",
+        "question": "Can I do voluntary work while on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#10",
+          "graduate-overview#7",
+          "graduate-costs#3",
+          "graduate-overview#9",
+          "graduate-overview#1"
+        ],
+        "latency_ms": 1.1
+      }
+    ]
+  },
+  "vector": {
+    "retriever": "vector_search",
+    "hits": 2,
+    "total": 12,
+    "recall_at_k": 0.1667,
+    "k": 5,
+    "median_latency_ms": 11.19,
+    "p95_latency_ms": 12.35,
+    "missed_cases": [
+      "frozen-01",
+      "frozen-02",
+      "frozen-03",
+      "frozen-06",
+      "frozen-07",
+      "frozen-08",
+      "frozen-09",
+      "frozen-10",
+      "frozen-11",
+      "frozen-12"
+    ],
+    "details": [
+      {
+        "id": "frozen-01",
+        "split": "frozen_holdout",
+        "question": "Can I take on a second job on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#5",
+          "skilled-worker-your-job#1",
+          "skilled-worker-salary-exceptions#4",
+          "skilled-worker-costs#5"
+        ],
+        "latency_ms": 11.85
+      },
+      {
+        "id": "frozen-02",
+        "split": "frozen_holdout",
+        "question": "Do I need a criminal record certificate for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-documents#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#4",
+          "skilled-worker-costs#5",
+          "skilled-worker-english#1",
+          "skilled-worker-documents#4",
+          "skilled-worker-extend#4"
+        ],
+        "latency_ms": 10.95
+      },
+      {
+        "id": "frozen-03",
+        "split": "frozen_holdout",
+        "question": "What happens if I want to change my employer on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-extend#3",
+          "skilled-worker-overview#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#8",
+          "skilled-worker-english#8",
+          "graduate-overview#2",
+          "skilled-worker-extend#9",
+          "sponsor-licence#1"
+        ],
+        "latency_ms": 10.68
+      },
+      {
+        "id": "frozen-04",
+        "split": "frozen_holdout",
+        "question": "What reference number from my university do I need for a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#4",
+          "graduate-overview#6",
+          "graduate-overview#7",
+          "graduate-documents#1",
+          "graduate-overview#2"
+        ],
+        "latency_ms": 11.22
+      },
+      {
+        "id": "frozen-05",
+        "split": "frozen_holdout",
+        "question": "Can I stay in the UK while waiting for my Graduate visa decision?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#7"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#2",
+          "graduate-overview#6",
+          "skilled-worker-extend#5",
+          "skilled-worker-extend#4",
+          "graduate-overview#7"
+        ],
+        "latency_ms": 10.85
+      },
+      {
+        "id": "frozen-06",
+        "split": "frozen_holdout",
+        "question": "Which countries are exempt from the English language requirement for Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-english#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-extend#4",
+          "skilled-worker-english#5",
+          "sponsor-licence#1",
+          "skilled-worker-your-job#11"
+        ],
+        "latency_ms": 11.07
+      },
+      {
+        "id": "frozen-07",
+        "split": "frozen_holdout",
+        "question": "How much is the Skilled Worker application fee from inside the UK for up to 3 years?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#4",
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#1",
+          "skilled-worker-documents#4"
+        ],
+        "latency_ms": 10.85
+      },
+      {
+        "id": "frozen-08",
+        "split": "frozen_holdout",
+        "question": "Can I apply for indefinite leave to remain after 5 years on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#14",
+          "skilled-worker-switching#9",
+          "skilled-worker-extend#4",
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#5"
+        ],
+        "latency_ms": 11.75
+      },
+      {
+        "id": "frozen-09",
+        "split": "frozen_holdout",
+        "question": "Can I get a refund on the healthcare surcharge if I work in public healthcare?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#1",
+          "graduate-costs#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-english#4",
+          "skilled-worker-english#8",
+          "graduate-overview#2",
+          "skilled-worker-extend#14"
+        ],
+        "latency_ms": 11.35
+      },
+      {
+        "id": "frozen-10",
+        "split": "frozen_holdout",
+        "question": "Can my employer sponsor my visa if their licence application is still pending?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "sponsor-licence#1",
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#5",
+          "skilled-worker-your-job#8",
+          "sponsor-licence#3",
+          "skilled-worker-salary-exceptions#5",
+          "skilled-worker-overview#4"
+        ],
+        "latency_ms": 11.27
+      },
+      {
+        "id": "frozen-11",
+        "split": "frozen_holdout",
+        "question": "Can I switch to a Graduate visa from a visitor visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#4",
+          "skilled-worker-costs#5",
+          "skilled-worker-english#1",
+          "skilled-worker-documents#4",
+          "skilled-worker-english#6"
+        ],
+        "latency_ms": 11.17
+      },
+      {
+        "id": "frozen-12",
+        "split": "frozen_holdout",
+        "question": "Can I do voluntary work while on a Graduate visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#5",
+          "graduate-overview#7",
+          "graduate-overview#6",
+          "skilled-worker-overview#11"
+        ],
+        "latency_ms": 12.22
+      }
+    ]
+  },
+  "hybrid": {
+    "retriever": "hybrid_rrf",
+    "hits": 5,
+    "total": 12,
+    "recall_at_k": 0.4167,
+    "k": 5,
+    "median_latency_ms": 12.14,
+    "p95_latency_ms": 14.18,
+    "missed_cases": [
+      "frozen-01",
+      "frozen-02",
+      "frozen-03",
+      "frozen-06",
+      "frozen-08",
+      "frozen-10",
+      "frozen-11"
+    ],
+    "details": [
+      {
+        "id": "frozen-01",
+        "split": "frozen_holdout",
+        "question": "Can I take on a second job on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-extend#15",
+          "skilled-worker-your-job#5",
+          "skilled-worker-switching#10",
+          "skilled-worker-your-job#1",
+          "skilled-worker-your-job#8"
+        ],
+        "latency_ms": 13.83
+      },
+      {
+        "id": "frozen-02",
+        "split": "frozen_holdout",
+        "question": "Do I need a criminal record certificate for a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-documents#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#5",
+          "skilled-worker-documents#4",
+          "skilled-worker-documents#2",
+          "skilled-worker-costs#2",
+          "skilled-worker-english#6"
+        ],
+        "latency_ms": 12.65
+      },
+      {
+        "id": "frozen-03",
+        "split": "frozen_holdout",
+        "question": "What happens if I want to change my employer on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-extend#3",
+          "skilled-worker-overview#5"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-your-job#3",
+          "skilled-worker-costs#5",
+          "skilled-worker-your-job#8",
+          "skilled-worker-overview#7",
+          "skilled-worker-extend#8"
+        ],
+        "latency_ms": 12.84
+      },
+      {
+        "id": "frozen-04",
+        "split": "frozen_holdout",
+        "question": "What reference number from my university do I need for a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-documents#1"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#6",
+          "graduate-documents#1",
+          "graduate-overview#2",
+          "graduate-overview#7",
+          "skilled-worker-your-job#11"
+        ],
+        "latency_ms": 12.26
+      },
+      {
+        "id": "frozen-05",
+        "split": "frozen_holdout",
+        "question": "Can I stay in the UK while waiting for my Graduate visa decision?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#7"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#2",
+          "graduate-overview#6",
+          "graduate-documents#1",
+          "skilled-worker-salary-exceptions#3"
+        ],
+        "latency_ms": 11.96
+      },
+      {
+        "id": "frozen-06",
+        "split": "frozen_holdout",
+        "question": "Which countries are exempt from the English language requirement for Skilled Worker?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-english#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-english#1",
+          "skilled-worker-english#5",
+          "skilled-worker-english#8",
+          "skilled-worker-english#4",
+          "skilled-worker-your-job#11"
+        ],
+        "latency_ms": 12.05
+      },
+      {
+        "id": "frozen-07",
+        "split": "frozen_holdout",
+        "question": "How much is the Skilled Worker application fee from inside the UK for up to 3 years?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#2"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-costs#2",
+          "skilled-worker-documents#4",
+          "skilled-worker-salary-exceptions#3",
+          "skilled-worker-switching#7",
+          "skilled-worker-extend#12"
+        ],
+        "latency_ms": 12.06
+      },
+      {
+        "id": "frozen-08",
+        "split": "frozen_holdout",
+        "question": "Can I apply for indefinite leave to remain after 5 years on a Skilled Worker visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "skilled-worker-overview#5"
+        ],
+        "retrieved_chunk_ids": [
+          "sponsor-licence#1",
+          "skilled-worker-switching#2",
+          "skilled-worker-overview#6",
+          "skilled-worker-extend#14",
+          "skilled-worker-overview#12"
+        ],
+        "latency_ms": 12.4
+      },
+      {
+        "id": "frozen-09",
+        "split": "frozen_holdout",
+        "question": "Can I get a refund on the healthcare surcharge if I work in public healthcare?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "skilled-worker-costs#1",
+          "graduate-costs#3"
+        ],
+        "retrieved_chunk_ids": [
+          "skilled-worker-overview#11",
+          "graduate-overview#9",
+          "sponsor-licence#1",
+          "skilled-worker-your-job#8",
+          "graduate-costs#3"
+        ],
+        "latency_ms": 11.91
+      },
+      {
+        "id": "frozen-10",
+        "split": "frozen_holdout",
+        "question": "Can my employer sponsor my visa if their licence application is still pending?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "sponsor-licence#1",
+          "skilled-worker-your-job#9"
+        ],
+        "retrieved_chunk_ids": [
+          "sponsor-licence#3",
+          "skilled-worker-your-job#8",
+          "skilled-worker-your-job#1",
+          "skilled-worker-salary-exceptions#4",
+          "skilled-worker-extend#4"
+        ],
+        "latency_ms": 12.11
+      },
+      {
+        "id": "frozen-11",
+        "split": "frozen_holdout",
+        "question": "Can I switch to a Graduate visa from a visitor visa?",
+        "matched": false,
+        "expected_chunk_ids": [
+          "graduate-overview#2"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#3",
+          "graduate-overview#7",
+          "graduate-documents#2",
+          "skilled-worker-english#6",
+          "skilled-worker-switching#4"
+        ],
+        "latency_ms": 12.18
+      },
+      {
+        "id": "frozen-12",
+        "split": "frozen_holdout",
+        "question": "Can I do voluntary work while on a Graduate visa?",
+        "matched": true,
+        "expected_chunk_ids": [
+          "graduate-overview#10"
+        ],
+        "retrieved_chunk_ids": [
+          "graduate-overview#7",
+          "graduate-overview#9",
+          "graduate-overview#6",
+          "graduate-overview#2",
+          "graduate-overview#10"
+        ],
+        "latency_ms": 12.09
+      }
+    ]
+  },
+  "timestamp": "2026-10-14T21:44:45.294939+00:00",
+  "split": "frozen_holdout",
+  "split_description": "Newly frozen independent holdout set (SHA-256 pinned; untouched for generalization)",
+  "configuration": {
+    "k": 5,
+    "corpus_chunks": 93,
+    "corpus_version": "2026-10-12-draft",
+    "embedding_provider": "fake",
+    "embedding_model": "fake-hash-embedder",
+    "embedding_dim": 64,
+    "rrf_k": 60
+  },
+  "metric_explanation": "Recall@5 measures whether AT LEAST ONE expected evidence chunk ID was present in the top 5 retrieved passages for each reviewed supported question. Retrieval success is NOT answer correctness: retrieving relevant context is necessary for evidence grounding, but generating an accurate, compliant answer still requires strict citation formatting, guardrail validation, and refusal of out-of-scope queries."
+}

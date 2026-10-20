@@ -1,0 +1,89 @@
+{
+  "_note": "Allowlist. 'verified' is true only after the URL was opened, returned HTTP 200, and the 'why' reason recorded. Non-GOV.UK sources are not allowed.",
+  "sources": [
+    {
+      "id": "graduate-overview",
+      "url": "https://www.gov.uk/graduate-visa",
+      "why": "Graduate visa overview: eligibility, how long you can stay (2 years / 18 months / 3 years PhD), cannot extend, switching example to Skilled Worker, work rights.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "graduate-costs",
+      "url": "https://www.gov.uk/graduate-visa/how-much-it-costs",
+      "why": "Graduate visa application fee and healthcare surcharge amounts; linked from the overview cost section.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "graduate-documents",
+      "url": "https://www.gov.uk/graduate-visa/documents-youll-need-to-apply",
+      "why": "Documents for a Graduate visa application (passport, CAS, BRP). Linked from the Graduate guide contents.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-overview",
+      "url": "https://www.gov.uk/skilled-worker-visa",
+      "why": "Skilled Worker overview: approved employer, certificate of sponsorship, eligible occupation, salary, duration up to 5 years, ILR mention, apply timing relative to CoS start date.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-your-job",
+      "url": "https://www.gov.uk/skilled-worker-visa/your-job",
+      "why": "Job eligibility: occupation codes (CASCOT), salary framework, approved employers/sponsors, CoS as an electronic record with a reference number, link to the sponsor licence fees.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-salary-exceptions",
+      "url": "https://www.gov.uk/skilled-worker-visa/when-you-can-be-paid-less",
+      "why": "When a lower salary than the usual rate can apply (immigration salary list, new entrant/recent graduate, PhD). Linked from 'your job'.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-switching",
+      "url": "https://www.gov.uk/skilled-worker-visa/switch-to-this-visa",
+      "why": "Switching to Skilled Worker from inside the UK, including from a Graduate visa; who cannot switch; apply-before-current-visa-expires.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-costs",
+      "url": "https://www.gov.uk/skilled-worker-visa/how-much-it-costs",
+      "why": "Skilled Worker fees, healthcare surcharge, and money-to-support-yourself / sponsor-can-support-you rules.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-english",
+      "url": "https://www.gov.uk/skilled-worker-visa/knowledge-of-english",
+      "why": "English language requirement and exemptions; needed for 'what you must show' questions.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-extend",
+      "url": "https://www.gov.uk/skilled-worker-visa/extend-your-visa",
+      "why": "Extending Skilled Worker (contrast with Graduate: Graduate cannot be extended). Includes transition rules for occupation skill level.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "skilled-worker-documents",
+      "url": "https://www.gov.uk/skilled-worker-visa/documents-you-must-provide",
+      "why": "Documents for a Skilled Worker application, including CoS reference number, occupation code, sponsor licence number. Linked from overview and your-job.",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "id": "sponsor-licence",
+      "url": "https://www.gov.uk/uk-visa-sponsorship-employers",
+      "why": "What a sponsor licence is; sponsoring someone does not guarantee they get a visa; CoS after licence. Context for licence-vs-sponsorship questions. The licensed-sponsor register itself is a large download/changelog and is not ingested.",
+      "http_status": 200,
+      "verified": true
+    }
+  ]
+}

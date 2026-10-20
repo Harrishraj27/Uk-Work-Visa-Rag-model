@@ -1,0 +1,32 @@
+# ── Secrets ──
+# Only .env.example is safe to commit (placeholder values only).
+.env
+.env.local
+.env.production
+.env.*
+!.env.example
+
+# ── Python / venv ──
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ── IDE / editor ──
+.cursor/
+.vscode/
+.idea/
+
+# ── Archives (never commit zipped copies — they may contain secrets or large data) ──
+*.zip
+*.tar.gz
+*.7z
+
+# ── Snapshots: Open Government Licence v3.0 content (see README attribution). ──
+# Re-fetch with `python -m ingestion.fetch` rather than committing large dated HTML extracts.
+# Keep the local copies — they are the evidence store (URL, title, page date, fetched time, content hash).
+data/snapshots/
+
+# ── Real vectors are generated on your machine (they cost API calls); the corpus and fake fixtures ARE committed. ──
+data/embeddings.jsonl
+data/staged/

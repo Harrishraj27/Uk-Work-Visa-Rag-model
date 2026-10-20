@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Version control
+.git/
+.gitignore
+
+# Development
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cursor/
+tests/
+.env
+
+# Data that shouldn't ship in the image (rebuild locally)
+data/snapshots/
+data/embeddings.jsonl
+data/staged/
+
+# Eval & docs (not needed at runtime)
+eval/
+docs/
+migrations/
+ingestion/
+README.md
